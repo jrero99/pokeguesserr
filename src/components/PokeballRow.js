@@ -23,11 +23,11 @@ const PokeballRow = (props) => {
         onMouseLeave={handleOnMouseLeave}
       >
         {props.results.searchedName}<span className={`tooltiptext ${showMessage ? "" : "invisible"}`}>
-          <p><b>Gen: </b>{props.results.searchedGen}</p>
-          <p><b>Type 1: </b>{props.results.searchedType1}</p>
-          <p><b>Type 2: </b>{type2}</p>
-          <p><b>Height: </b>{props.results.searchedHeight}</p>
-          <p><b>Weight: </b>{props.results.searchedHeight}</p>
+          <p className="text-white"><b>Gen: </b>{props.results.searchedGen}</p>
+          <p className="text-white"><b>Type 1: </b>{props.results.searchedType1}</p>
+          <p className="text-white"><b>Type 2: </b>{type2}</p>
+          <p className="text-white"><b>Height: </b>{props.results.searchedHeight / 10}</p>
+          <p className="text-white"><b>Weight: </b>{props.results.searchedWeight / 10}</p>
         </span>
         
       </a>

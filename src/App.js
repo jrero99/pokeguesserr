@@ -39,9 +39,9 @@ function App() {
   };
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    console.log(e)
     getPokemonByName(description.toLowerCase()).then((poke) =>
       setSearchedPokemon(poke)
+      
     );
   };
 
@@ -196,9 +196,11 @@ function App() {
 
     
     setTurns([...turns, result]);
+    
   }, [searchedPokemon]);
   return (
-    <div>
+   <div className="grid h-screen place-items-center">
+    
       {end.finish ? (
         <End poke={pokemon} result={end} />
       ) : (
@@ -214,12 +216,12 @@ function App() {
           {turns.slice(1).map((turn) => (
             <PokeballRow key={turn.id} results={turn} />
           ))}
-          <form onSubmit={handleOnSubmit}>
+          <form onSubmit={handleOnSubmit} className="text-center mt-10 mb-10 font-bold ">
             <input
               placeholder="What is that pokémon?"
               onChange={handleOnChange}
             />
-            <button>Try</button>
+            <button className = "bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded-l ml-1">Try</button>
           </form>
           <Type types={types} />
         </div>
