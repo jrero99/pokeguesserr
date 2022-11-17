@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pokeguesserr/static/css/main.a7b6a191.css",
+    "main.js": "/pokeguesserr/static/js/main.5c77cca3.js",
+    "index.html": "/pokeguesserr/index.html",
+    "main.a7b6a191.css.map": "/pokeguesserr/static/css/main.a7b6a191.css.map",
+    "main.5c77cca3.js.map": "/pokeguesserr/static/js/main.5c77cca3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7b6a191.css",
+    "static/js/main.5c77cca3.js"
+  ]
+}
