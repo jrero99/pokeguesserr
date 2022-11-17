@@ -1,3 +1,7 @@
+# POKEGUESSER
+
+Hi, this is my very first React App. I tried to clon Squirlde [https://squirdle.fireblend.com/](https://squirdle.fireblend.com/). I know that their might be some things that could have been done better. Maybe in the future I redo the app better. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
